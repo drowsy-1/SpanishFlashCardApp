@@ -1,0 +1,25 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#1a73e8",
+        secondary: "#3c4043",
+      },
+      animation: {
+        'flip': 'flip 0.6s ease-in-out',
+      },
+      keyframes: {
+        flip: {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(180deg)' },
+        }
+      }
+    },
+  },
+  plugins: [],
+}
