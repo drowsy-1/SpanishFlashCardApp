@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spanish Vocabulary Builder - 1500 Words in 27 Weeks</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Spanish Vocabulary Builder</h1>
+      <p class="subtitle">
+        Master 1500 most frequent Spanish words in 27 weeks
+      </p>
+    </header>
+
+    <main id="app">
+      <nav class="week-selector">
+        <div class="week-navigation">
+          <label for="week-select">Choose Week:</label>
+          <button id="prev-week" class="week-nav-btn" title="Previous Week">
+            ‹
+          </button>
+          <select id="week-select">
+            <!-- Weeks will be populated by JavaScript -->
+          </select>
+          <button id="next-week" class="week-nav-btn" title="Next Week">
+            ›
+          </button>
+        </div>
+        <div class="progress-info">
+          <span id="progress-text">Week 1 of 27</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="learning-area">
+        <div class="flashcard" id="flashcard">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <h2 class="spanish-word" id="spanish-word">Loading...</h2>
+              <p class="click-hint">Click to flip</p>
+            </div>
+            <div class="flashcard-back">
+              <h4 class="spanish-word-small" id="spanish-word-back"></h4>
+              <h3 class="english-word" id="english-word"></h3>
+              <p class="example-sentence" id="example-sentence"></p>
+              <p class="example-translation" id="example-translation"></p>
+              <div class="word-actions">
+                <button class="know-btn" id="know-btn">I Know This</button>
+                <button class="study-btn" id="study-btn">
+                  Need More Practice
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="prev-word" class="nav-btn">← Previous</button>
+        <button id="next-word" class="nav-btn">Next →</button>
+        <button id="shuffle-btn" class="action-btn">Shuffle</button>
+        <button id="reset-week" class="action-btn">Reset Week</button>
+      </section>
+
+      <section class="stats">
+        <div class="stat-item">
+          <span class="stat-label">Words This Week:</span>
+          <span class="stat-value" id="words-this-week">0/56</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Total Progress:</span>
+          <span class="stat-value" id="total-progress">0/1500</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Known Words:</span>
+          <span class="stat-value" id="known-words">0</span>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
