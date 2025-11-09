@@ -28,9 +28,9 @@ export const VOCABULARY_DATA = [
   {
     id: 4,
     spanish: 'que',
-    english: 'that, which',
-    example: 'El libro que leo.',
-    exampleTranslation: 'The book that I read.',
+    english: 'that, which, what',
+    example: '¿Qué quieres?',
+    exampleTranslation: 'What do you want?',
   },
   {
     id: 5,
@@ -3946,10 +3946,10 @@ export const VOCABULARY_DATA = [
   // Week 11: Weather and Nature (Words 561-616)
   {
     id: 561,
-    spanish: 'clima',
-    english: 'climate, weather',
-    example: 'El clima es tropical.',
-    exampleTranslation: 'The climate is tropical.',
+    spanish: 'tiempo',
+    english: 'time, weather',
+    example: '¿Qué tiempo hace?',
+    exampleTranslation: "What's the weather like?",
   },
   {
     id: 562,
